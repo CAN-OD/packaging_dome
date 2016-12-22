@@ -1,0 +1,51 @@
+<div class="tab-setting">
+    <div class="title">
+        <span ng-bind="$i18n('src_app_business_tab_setting_js_1')"></span>
+        <span class="glyphicon glyphicon-plus" ng-click="addPageSetParams()" title="{{$i18n('src_app_business_tab_setting_js_2')}}"></span>
+    </div>
+    <table class="tableTitle">
+        <thead>
+            <th class="default" ng-bind="$i18n('src_app_business_tabSetting_tabSettingTpl_html_1')"></th>
+            <th class="index"  ng-bind="$i18n('scripts_app_business_tabSetting_tabSettingTpl_html_2')"></th>
+            <th class="name" ng-bind="$i18n('lib_pluginSchema_js_57')"></th>
+            <th class="tips" ng-bind="$i18n('src_app_business_tabSetting_tabSettingTpl_html_2')"></th>
+            <th class="bg-color" ng-bind="$i18n('lib_pluginSchema_js_15')"></th>
+            <th class="tab-show" ng-bind="$i18n('src_app_business_tabSetting_tabSettingTpl_html_3')"></th>
+            <th class="tab-close" ng-bind="$i18n('scripts_app_business_tabSetting_tabSettingTpl_html_1')"></th>
+            <th class="remove" ng-bind="$i18n('src_app_business_designer_designerConfig_js_14')"></th>
+        </thead>
+    </table>
+    <div class="customOptionsDataListBox" ng-scroll="true">
+        <table class="tab-tb">
+            <tr ng-repeat="data in tabList">
+                <td class="default">
+                    <label ng-click="selectDefault($index)" style="margin: 0"><input type="radio" name="tabListIsDefault" ng-checked="data.isDefault"/></label>
+                </td>
+                <td class="index">
+                    <input type="text" ng-length="64" ng-verification="expid" ng-focus="focuscheck(data.id,$index)" ng-blur="blurcheck(data.id,$index)" field-name="data.idPath" style="width:70px;" title="{{data.id}}" class="inputStyle inputStyleFocus" ng-model="data.id"/>
+                </td>
+                <td class="name">
+                    <input type="text" ng-length="64" ng-verification="exp" field-name="data.titlePath" title="{{data.title}}" class="inputStyle inputStyleFocus" ng-model="data.title"/>
+                </td>
+                <td class="tips">
+                    <input type="text" ng-length="64" ng-verification="exp64" field-name="data.tipsPath" title="{{data.tips}}" class="inputStyle inputStyleFocus" ng-model="data.tips"/>
+                </td>
+                <td class="bg-color">
+                    <ms-colorpicker width="75" color="data.bgColor"></ms-colorpicker>
+                </td>
+                <td class="tab-show">
+                    <tiny-select ng-if="!data.isDefault" values="showItem" width="100" default-selectid="getDefaultSelect(data)" select="showSelect(selectId,label,$index)"></tiny-select>
+                    <span ng-if="data.isDefault" ng-bind="$i18n('src_app_business_form_PageProp_form_PagePropService_js_1')"></span>
+                </td>
+                <td class="tab-close">
+                    <tiny-select ng-if="!data.isDefault" values="closeItem" width="100" default-selectid="getCloseSelect(data)" select="showTabCloseSelect(selectId,label,$index)"></tiny-select>
+                    <span ng-if="data.isDefault" ng-bind="$i18n('src_app_business_form_PageProp_form_PagePropService_js_2')"></span>
+                </td>
+                <td class="remove">
+                    <a class="icon-remove" ng-click="remove($index)"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+

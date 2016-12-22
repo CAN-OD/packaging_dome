@@ -1,0 +1,123 @@
+/*******************************************************************************
+* validator.css -  validator Style
+* Copyright (C) 2013 
+*
+* @Author Skiny
+* @Email lavenler@live.cn
+* @UpdateTime (2014-06-13)
+*******************************************************************************/
+.validator-msg{
+	position:absolute;
+	border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    outline: medium none;
+    opacity: 1;
+    padding: 6px;
+    z-index: 10000;
+    visibility:hidden;
+}
+.validator-msg .msg-content{
+	color:#666;
+}
+.validator-msg .msg-arrow-outer, .validator-msg .msg-arrow{
+	border-color: transparent;
+    border-style: solid;
+    border-width: 6px;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    width: 0;
+}
+
+/*msg direction*/
+	/*top*/
+.msg-top .msg-arrow-outer{
+	left: 0;
+    margin: -6px 0 0 -13px;
+    top: 50%;
+}
+.msg-top .msg-arrow{
+	left: 0;
+    margin: -6px 0 0 -12px;
+    top: 50%;
+}
+
+	/*right*/
+.msg-right .msg-arrow-outer{
+	left: 0;
+    margin: -6px 0 0 -13px;
+    top: 50%;
+}
+.msg-right .msg-arrow{
+	left: 0;
+    margin: -6px 0 0 -12px;
+    top: 50%;
+}
+
+	/*left*/
+.msg-left .msg-arrow-outer{
+	left: auto;
+	right:0;
+    margin: -6px -13px 0 0;
+    top: 50%;
+    border-color: transparent transparent transparent #FF0000!important;
+}
+.msg-left .msg-arrow{
+	left: auto;
+	right:0;
+    margin: -6px -12px 0 0;
+    top: 50%;
+    border-color: transparent transparent transparent #fff3f3!important;
+}
+
+	/*bottom*/
+.msg-bottom .msg-arrow-outer{
+	left: 20px;
+    margin: -13px 0 0 -6px;
+    top:0;
+    border-color:transparent transparent #FF0000 transparent!important;
+}
+.msg-bottom .msg-arrow{
+	left: 20px;
+    margin: -12px 0 0 -6px;
+    top:0;
+    border-color:transparent transparent #fff3f3 transparent!important;
+}
+
+/*error*/
+	/*error msg*/
+.validator-error{
+	border-color:#ff0000;
+	background-color:#fff3f3;
+}
+.validator-error .msg-arrow-outer{
+	border-right-color:#FF0000;
+}
+.validator-error .msg-arrow{
+	border-right-color: #fff3f3;
+}
+	/*error input*/
+input.validator-input-error,textarea.validator-input-error{
+	border:solid 1px #FF0000!important;
+	background-image:none;
+	background-color:#fff3f3!important;
+	box-shadow:none;
+}
+.validator-input-error:focus{
+	box-shadow:0 0 5px #FF0000!important;
+}
+
+/*tips*/
+	/*tips msg*/
+.validator-tips{
+	border-color:#95b8e7;
+	background-color:#fff;
+}
+.validator-tips .msg-arrow-outer{
+	border-right-color:#95b8e7;
+}
+.validator-tips .msg-arrow{
+	border-right-color: #fff;
+}

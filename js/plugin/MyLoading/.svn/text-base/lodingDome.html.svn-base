@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>加载样式</title>
+    <link rel="stylesheet" href="css/rest.css"/>
+</head>
+<body>
+
+</body>
+<script src="js/jquery-1.7.1.js"></script>
+<script src="js/MyLoading.js"></script>
+<script>
+     $(function(){
+         $("body").MyLoading();
+     })
+</script>
+</html>

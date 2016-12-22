@@ -1,0 +1,27 @@
+/*弹出层基本样式*/
+.wwbPop {width: 100%;height: 100%;min-width:500px;max-height:1024px;position: absolute;left:0;top:0;overflow: hidden;z-index: 999;}
+.wwbPop_Mask {width: 100%;height: 100%;max-height:1000px;background-color: rgba(0, 0, 0, 0.61);opacity: 0.6;filter:alpha(opacity=20);}
+/*.wwbPop_Cont {width: auto;height:auto;min-width:500px;min-height:500px;box-shadow:-2px 0 73px black;*/
+    /*position: absolute;right:0;top:0;*/
+    /*-webkit-transition: top 1s;*/
+    /*-moz-transition:top 1s;*/
+    /*-o-transition: top 1s;*/
+    /*transition: top 1s;*/
+    /*background-color: #f1fdec;}*/
+/*.wwbPop_SitionJust {top:50%;}*/
+/*.wwbPop_SitionLose {top:-50%;}*/
+
+/*.wwbPop_ContTop {width: 100%;height: auto;position: relative;}*/
+/*.wwbPop_ContTop .wwbPop_ContTitle {width: 100%;line-height: 35px;font-size: 16px;font-weight: bold;}*/
+
+/*.wwbPop_ContTop .wwbClose {width: 29px;height: 30px;position: absolute;right: 4px;top:2px;background: url("../img/icon/delete.png") no-repeat ;cursor: pointer;}*/
+
+.wwbPop .loading{
+    position:absolute;
+    top:0;
+    left:0;
+    /*"background":"url(images/loading.gif) no-repeat center center",*/
+    width:100%;
+    height:100%;
+    background:url(../images/loading.gif) no-repeat center center;
+}

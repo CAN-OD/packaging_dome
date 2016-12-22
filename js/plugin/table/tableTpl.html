@@ -1,0 +1,70 @@
+<div ng-controller="tableCtrl">
+    <!--<select ng-model="selectValue1" ng-options="item.id as item.action for item in todos">
+        <option value="">pick one</option>
+    </select>
+    <select ng-model="selectValue2" ng-options="item.action group by item.place for item in todos">
+        <option value="">pick one</option>
+    </select>
+    <div>Selected1:{{selectValue1 || "none"}}</div>
+    <div>Selected2:{{selectValue2 || "none"}}</div>-->
+
+    <!--<table>
+        <tbody>
+        <tr ng-repeat-start="item in arr">
+            <td>This is item {{$index}}</td>
+        </tr>
+        <tr>
+            <td>{{item.name}}</td>
+        </tr>
+        <tr ng-repeat-end>
+            <td>item {{$index}} is {{item.complete?"":"not"}} complete</td>
+        </tr>
+        </tbody>
+    </table>-->
+    <button ng-click="test()">test</button>
+    <div id="bbb"></div>
+    <tiny-etable
+            id="tableAttr.id"
+            columns="tableAttr.columns"
+            data="tableAttr.data"
+            caption="tableAttr.caption"
+            s-scroll-y="tableAttr.scrollY"
+            columns-visibility="tableAttr.columnsVisibility"
+            enable-filter="true"
+            fixed-left-col-num="tableAttr.fixedLeftColNum"
+            row-number = "tableAttr.rowNumber"
+            pagination-style="tableAttr.paginationStyle"
+            total-records="tableAttr.totalRecords"
+            render-row="tableAttr.renderRow"
+            statistics="tableAttr.statistics"
+            sec-level-columns="tableAttr.secLevelColumns"
+            show-details="true"
+            paging="true"
+            checkbox="tableAttr.checkbox"
+            columns-draggable="true"
+            col-reorder="true"
+            length-change="true"
+            tree-grid="tableAttr.treeGrid"
+            display-length="10"
+            head-background = "tableAttr.headBackground"
+            border-width="tableAttr.borderWidth"
+            border-color="'red'"
+            op-area-config="tableAttr.opAreaConfig"
+            table-tips="tableAttr.tableTips"
+
+            table-language="tableAttr.tableLanguage"
+
+            draw-callback="tableAttr.drawCallback"
+            t-body-checkbox-fn="tableAttr.tBodyCheckboxFn"
+
+            ></tiny-etable>
+
+</div>
+
+        <!--databackground="'#ff0000'"-->
+        <!--<tiny-fileupload multi="true"></tiny-fileupload>-->
+        <!--
+            total-records="100"
+            callback="tableAttr.test2"
+            change-select="tableAttr.test2"
+        -->

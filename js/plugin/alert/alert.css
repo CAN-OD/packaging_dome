@@ -1,0 +1,37 @@
+/*******************************************************************************
+* ePop.css -  ePop Style
+* Copyright (C) 2013
+*
+* @Author Skiny
+* @Email lavenler@live.cn
+* @UpdateTime (2013-10-05)
+*******************************************************************************/
+.alert-container{width:100%;height:100%;overflow:hidden;position:fixed;z-index:6000;left:0;top:0;}
+.alert-mask{width:100%;height:100%;opacity:0.3;background-color:#666;filter:alpha(opacity=30);}
+
+.alert-pop{min-width:300px;position:fixed;left:50%;top:50%;border:solid 1px #b8b8b8;overflow:hidden;background-color:#fff;}
+.alert-header{height:40px;line-height:40px;background:#01a2d9;color:#fff;overflow:hidden;/*border-top:2px #ee8608 solid;*/
+  position:relative;}
+.alert-body{min-height:50px;background:#fff;font-size:12px;padding-bottom:10px;overflow-y:auto;overflow-x:hidden;}
+.alert-footer{min-height:30px;background:#fff;text-align:right;padding:8px 10px 8px 0;}
+.alert-footer button{
+    padding: 8px 20px;
+    margin-right: 5px;
+}
+.footer-center{text-align:center;padding-right:0;}
+.alert-title{font-size:14px;padding-left:20px;font-weight:700;}
+.alert-close{display:inline-block;width:20px;height:18px;background:url(images/close.png) -45px -5px no-repeat;position:absolute;right:10px;top:10px; cursor:pointer;}
+/*.alert-close:hover{background-position:-12px -5px;}*/
+.alert-btn{background: url(images/btn-bg.png) repeat-x;color:#d87000;border: 1px #b5b3b4 solid;border-radius: 3px;cursor: pointer;
+    font-size: 12px;height: 30px;margin: 0 5px;padding: 0 30px;font-weight:700;}
+/*.alert-btn:hover{background-position:0 -30px;}*/
+.alert-btn.sure{background: #ee8608;color: #fff;}
+.alert-btn.mousedown{background: #dfdbdd!important;}
+.alert-btn.sure.mousedown{background-color: #dd7500!important;}
+.alert-alert{max-height:80px;padding:15px 10px;width:280px;line-height:20px;word-break: break-all;word-wrap: break-word;}
+.alert-popup{padding:10px;min-width:280px;min-height:130px;line-height:20px;}
+.alert-success,.alert-error, .alert-tip{font-weight:700;line-height:23px;min-height:30px;margin:10px;border:solid 1px #ffe3d6;padding:15px 30px 15px 55px;min-width:210px;}
+.alert-success{background:#fff5dd url(images/success.png) 8px center no-repeat;color:#30a640;}
+.alert-error{background:#fff5dd url(images/error.png) 8px center no-repeat;color:#b43535;}
+./*alert-tip{background:#fff5dd url(images/tip.png) 8px center no-repeat;color:#b43535;}*/
+.alert-body iframe{border:0;padding:0;}
